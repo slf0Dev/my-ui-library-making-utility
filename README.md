@@ -38,14 +38,19 @@ local CornerFrame = Module.Instance("Frame",{
 Parent = Screengui;
 Name = "CornerFrame";
 BackgroundColor3 = Color3.fromRGB(0,255,0);
-CornerRadius = UDim.new(0,100)
+BackgroundTransparency = 0;
+CornerRadius = UDim.new(0,100);
+Position = UDim2.new(0.45,0,0.5,0);
+Size = UDim2.new(0,50,0,50)
 })
 
 local SimpleFrame = Module.Instance("Frame",{
 Parent = Screengui;
 Name = "SimpleFrame";
 BackgroundColor3 = Color3.fromRGB(0,0,255);
-Position = UDim2.new(0.5,0,0.5,0)
+BackgroundTransparency = 0;
+Position = UDim2.new(0.5,0,0.5,0);
+Size = UDim2.new(0,50,0,50)
 })
 ```
 
