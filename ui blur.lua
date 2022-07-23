@@ -85,7 +85,7 @@ local DrawQuad; do
 			p0.BottomSurface = 0
 			p0.Anchored = true
 			p0.CanCollide = false
-			p0.Material = 'Neon'
+			p0.Material = 'Glass'
 			p0.Size = Vector3.new(sz, sz, sz)
 			local mesh = Instance.new('SpecialMesh', p0)
 			mesh.MeshType = 2
