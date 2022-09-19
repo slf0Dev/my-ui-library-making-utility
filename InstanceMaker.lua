@@ -1,13 +1,14 @@
 local Module = {}
 
 function Module.Instance(instance : string,properties : table)
-    local CreatedInstance,Corner,Stroke
-    CreatedInstance = Instance.new(instance)
+    local Corner
+    local Stroke
+    local CreatedInstance = Instance.new(instance)
 
     for property,value in next,properties do
         if tostring(property) ~= "CornerRadius" or tostring(property) ~= "Stroke" then
             CreatedInstance[property] = value
-        elseif tostring(property) == "Stroke" then
+        elseif tostring(value) == "Stroke" then
             Stroke = Instance.new("UIStroke",CreatedInstance)
             Stroke.Color = value["Color"]
             Stroke.Thickness = value["Thick"]
