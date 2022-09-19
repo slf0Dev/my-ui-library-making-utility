@@ -12,7 +12,7 @@ function Module.Instance(instance : string,properties : table)
             Stroke.Color = value["Color"]
             Stroke.Thickness = value["Thick"]
             Stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            Stroke.Transparency = value["Tranparency"]
+            Stroke.Transparency = value["Transparency"]
             Stroke.LineJoinMode = Enum.LineJoinMode.Round
         elseif tostring(property) == "CornerRadius" then
             Corner = Instance.new("UICorner",CreatedInstance)
