@@ -9,6 +9,7 @@ function Module.Instance(instance : string,properties : table)
             CreatedInstance[property] = value
         elseif tostring(property) == "Stroke" then
             Stroke = Instance.new("UIStroke",CreatedInstance)
+            Stroke.Name = "Stroke"
             Stroke.Color = value["Color"]
             Stroke.Thickness = value["Thick"]
             Stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
